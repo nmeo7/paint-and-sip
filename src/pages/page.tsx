@@ -48,7 +48,7 @@ export default function Home() {
         },
         {
           headers: {
-            'Authorization': `Bearer `,
+            'Authorization': `Bearer ${process.env.NEXT_PUBLIC_OPENAI_KEY}`,
             'Content-Type': 'application/json',
           },
         }
